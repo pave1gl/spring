@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main page</title>
+</head>
+<body>
+<form method="post">
+<input type="text" name="name" placeholder="Введите имя">
+  <input type="text" name="age" placeholder="Введите возраст">
+  <button type="submit">Добавить</button>
+</form>
+<div> List </div>
+<div>
+  <b th:text="'id, ' + ${id} + '!'"></b>
+  <span th:text="'name, ' + ${name} + '!'"> </span>
+  <i th:text="'age, ' + ${age} + '!'"> </i>
+</div>
+<p>Get your greeting <a href="/greeting">here</a></p>
+</body>
+</html>
